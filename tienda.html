@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jeffry fitness</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/misestilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/icon/icons8-gym-64.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  </head>
+  <body class="slider3" onload="hola();">
+    <div class="contenerdor_loader" id="#hola1">
+      <div class="position-absolute top-50 start-50 translate-middle">
+        <div role="status">
+          <img class="ms-4 rotar" src="img/icon/dumbbell (1).png" alt="">
+        </div>
+        <h2 class="colorblanco pt-3">Cargando...</h2>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-light navFijo">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><i>Jeffry fitnnes</i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="P_videos.html">Videos</a>
+            </li>
+            <li class="nav-item">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tienda
+                </a>
+                <ul class="dropdown-menu fondoCompra mt-2" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a type="button" class="btn colorblanco" href="tienda.html">Accesorios</a></li>
+                  <li><a type="button" class="btn colorblanco" href="suscripciones.html">Suscripciones</a></li>
+                </ul>
+              </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">login</a>
+            </li>
+            <li class="nav-item">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Recomedaciones
+                </a>
+                <ul class="dropdown-menu fondoCompra mt-2" aria-labelledby="navbarDropdownMenuLink">
+                  <li><button type="button" class="btn colorblanco" id="liveToastBtn">recomendacion 1</button></li>
+                  <li><button type="button" class="btn colorblanco" id="liveToastBtn2">recomendacion 2</button></li>
+                  <li><button type="button" class="btn colorblanco" id="liveToastBtn3">recomendacion 3</button></li>
+                </ul>
+              </li>
+              <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <img src="img/icon/dumbbell.png" class="rounded me-2" alt="...">
+                    <strong class="me-auto">Haga Ejercicio</strong>
+                    <small>El ejercicio alarga tu vida</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">
+                    Si quieres tener el cuerpo de tus sueños haz ejercicios
+                  </div>
+                </div>
+              </div>
+              <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div id="liveToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <img src="img/icon/athlete.png" class="rounded me-2" alt="...">
+                    <strong class="me-auto">Aerobicos</strong>
+                    <small>Son muy buenos ejercicios</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">
+                    Mejora la resistencia y reduce los infartos
+                  </div>
+                </div>
+              </div>
+              <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div id="liveToast3" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <img src="img/icon/weightlifter.png" class="rounded me-2" alt="...">
+                    <strong class="me-auto">Cargas pesadas</strong>
+                    <small>Mejora los musculos</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">
+                    hace que el musculo se desgarre y despues se recupere
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class=" col-lg-12 col-md-12 col-sm-12">
+        <h2 class="subtitulo">Accesorios</h2>
+    </div>
+    <div class=" col-lg-12 col-md-12 col-sm-12">
+        <h2 class="subtitulo">Proteinas</h2>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner ">
+            <div class="carousel-item active">
+                  <div class="row col-lg-10 col-md-10 col-sm-10 d-flex justify-content-center mx-auto mb-4">
+                    <div class="card border border-primary col col-lg-4 col-md-6 col-6 sinBordes" style="width: 18rem;">
+                        <img src="img/tienda/proteinas/proteina18.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title sudtitulo_n">Proteina pura</h5>
+                            <p class="card-text">$250.000</p>
+                            <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                            </button>                        </div>
+                    </div>
+                    <div class="card border border-primary col col-lg-4 col-md-6 col-12  sinBordes" style="width: 18rem;">
+                        <img src="img/tienda/proteinas/proteina1.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title sudtitulo_n">Proteina pura</h5>
+                            <p class="card-text">$250.000</p>
+                            <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                            </button>
+                            </div>
+                    </div>
+                    <div class="card border border-primary col col-lg-4 col-md-6 col-6 sinBordes" style="width: 18rem;">
+                        <img src="img/tienda/proteinas/proteina2.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title sudtitulo_n">Proteina pura</h5>
+                            <p class="card-text">$250.000</p>
+                            <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                            </button>                        </div>
+                    </div>
+                    <div class="card border border-primary col col-lg-4 col-md-6 col-6 sinBordes" style="width: 18rem;">
+                        <img src="img/tienda/proteinas/proteina3.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title sudtitulo_n">Proteina pura</h5>
+                            <p class="card-text">$250.000</p>
+                            <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                            </button>                        </div>
+                    </div>
+                    <div class="card border border-primary col col-lg-4 col-md-6 col-6  sinBordes" style="width: 18rem;">
+                        <img src="img/tienda/proteinas/proteina4.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title sudtitulo_n">Proteina pura</h5>
+                            <p class="card-text">$250.000</p>
+                            <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                            </button>                        </div>
+                    </div>
+                    <div class="card border border-primary col col-lg-4 col-md-6 col-6  sinBordes" style="width: 18rem;">
+                        <img src="img/tienda/proteinas/proteina5.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title sudtitulo_n">Proteina pura</h5>
+                            <p class="card-text">$155.000</p>
+                            <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                            </button>                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="carousel-item active">
+                  <div class="row col-lg-10 col-md-10 col-sm-10 d-flex justify-content-center mx-auto mb-4">
+                    <div class="card border border-primary col col-lg-4 col-md-6 col-6 sinBordes" style="width: 18rem;">
+                        <img src="img/tienda/proteinas/proteina6.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title sudtitulo_n">Proteina pura</h5>
+                            <p class="card-text">$155.000</p>
+                            <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                            </button>                        </div>
+                    </div>
+                    <div class="card border border-primary col col-lg-4 col-md-6 col-12  sinBordes" style="width: 18rem;">
+                        <img src="img/tienda/proteinas/proteina7.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title sudtitulo_n">Proteina pura</h5>
+                            <p class="card-text">$155.000</p>
+                            <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                            </button>                        </div>
+                    </div>
+                    <div class="card border border-primary col col-lg-4 col-md-6 col-6 sinBordes" style="width: 18rem;">
+                        <img src="img/tienda/proteinas/proteina8.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title sudtitulo_n">Proteina pura</h5>
+                            <p class="card-text">$155.000</p>
+                            <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                            </button>                        </div>
+                    </div>
+                    <div class="card border border-primary col col-lg-4 col-md-6 col-6 sinBordes" style="width: 18rem;">
+                        <img src="img/tienda/proteinas/proteina9.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title sudtitulo_n">Proteina pura</h5>
+                            <p class="card-text">$155.000</p>
+                            <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                            </button>                        </div>
+                    </div>
+                    <div class="card border border-primary col col-lg-4 col-md-6 col-6  sinBordes" style="width: 18rem;">
+                        <img src="img/tienda/proteinas/proteina10.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title sudtitulo_n">Proteina pura</h5>
+                            <p class="card-text">$120.000</p>
+                            <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                            </button>                        </div>
+                    </div>
+                    <div class="card border border-primary col col-lg-4 col-md-6 col-6  sinBordes" style="width: 18rem;">
+                        <img src="img/tienda/proteinas/proteina11.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title sudtitulo_n">Proteina pura</h5>
+                            <p class="card-text">$120.000</p>
+                            <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                            </button>                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="carousel-item active">
+                  <div class="row col-lg-10 col-md-10 col-sm-10 d-flex justify-content-center mx-auto mb-4">
+                    <div class="card border border-primary col col-lg-4 col-md-6 col-6 sinBordes" style="width: 18rem;">
+                        <img src="img/tienda/proteinas/proteina12.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title sudtitulo_n">Proteina pura</h5>
+                            <p class="card-text">$120.000</p>
+                            <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                            </button>                          </div>
+                    </div>
+                    <div class="card border border-primary col col-lg-4 col-md-6 col-12  sinBordes" style="width: 18rem;">
+                        <img src="img/tienda/proteinas/proteina13.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title sudtitulo_n">Proteina pura</h5>
+                            <p class="card-text">$120.000</p>
+                            <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                            </button>                          </div>
+                    </div>
+                    <div class="card border border-primary col col-lg-4 col-md-6 col-6 sinBordes" style="width: 18rem;">
+                        <img src="img/tienda/proteinas/proteina14.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title sudtitulo_n">Proteina pura</h5>
+                            <p class="card-text">$120.000</p>
+                            <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                            </button>                          </div>
+                    </div>
+                    <div class="card border border-primary col col-lg-4 col-md-6 col-6 sinBordes" style="width: 18rem;">
+                        <img src="img/tienda/proteinas/proteina15.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title sudtitulo_n">Proteina pura</h5>
+                            <p class="card-text">$120.000</p>
+                            <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                            </button>                          </div>
+                    </div>
+                    <div class="card border border-primary col col-lg-4 col-md-6 col-6  sinBordes" style="width: 18rem;">
+                        <img src="img/tienda/proteinas/proteina16.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title sudtitulo_n">Proteina pura</h5>
+                            <p class="card-text">$120.000</p>
+                            <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                            </button>                        </div>
+                    </div>
+                    <div class="card border border-primary col col-lg-4 col-md-6 col-6  sinBordes" style="width: 18rem;">
+                        <img src="img/tienda/proteinas/proteina17.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title sudtitulo_n">Proteina pura</h5>
+                            <p class="card-text">$70.000</p>
+                            <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                            </button>                          
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+    </div>
+    <div class=" col-lg-12 col-md-12 col-sm-12">
+      <h2 class="subtitulo">Ropa</h2>
+    </div>
+    <div class="row col-lg-10 col-md-10 col-sm-10 d-flex justify-content-center mx-auto mb-4">
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              Camisetas
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              <div class="row col-lg-10 col-md-10 col-sm-10 d-flex justify-content-center mx-auto mb-4">
+                <div class="card border border-primary col col-lg-4 col-md-6 col-6 sinBordes" style="width: 18rem;">
+                    <img src="img/tienda/ropa/camisetas/camiseta1.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title sudtitulo_n">Camiseta Deportiva</h5>
+                        <p class="card-text">$160.000</p>
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                        </button>                      
+                    </div>
+                </div>
+                <div class="card border border-primary col col-lg-4 col-md-6 col-12  sinBordes" style="width: 18rem;">
+                    <img src="img/tienda/ropa/camisetas/camiseta2.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title sudtitulo_n">Camiseta Deportiva</h5>
+                        <p class="card-text">$45.000</p>
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                        </button>                      
+                    </div>
+                </div>
+                <div class="card border border-primary col col-lg-4 col-md-6 col-6 sinBordes" style="width: 18rem;">
+                    <img src="img/tienda/ropa/camisetas/camiseta3.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title sudtitulo_n">Camiseta Deportiva</h5>
+                        <p class="card-text">$90.000</p>
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                        </button>                      
+                    </div>
+                </div>
+                <div class="card border border-primary col col-lg-4 col-md-6 col-6 sinBordes" style="width: 18rem;">
+                    <img src="img/tienda/ropa/camisetas/camiseta4.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title sudtitulo_n">Camiseta Deportiva</h5>
+                        <p class="card-text">$199.000</p>
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                        </button>                      
+                      </div>
+                </div>
+                <div class="card border border-primary col col-lg-4 col-md-6 col-6  sinBordes" style="width: 18rem;">
+                    <img src="img/tienda/ropa/camisetas/camiseta5.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title sudtitulo_n">Camiseta Deportiva</h5>
+                        <p class="card-text">$302.000</p>
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                        </button>                       
+                    </div>
+                </div>
+                <div class="card border border-primary col col-lg-4 col-md-6 col-6  sinBordes" style="width: 18rem;">
+                  <img src="img/tienda/ropa/camisetas/camiseta6.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                  <div class="card-body">
+                        <h5 class="card-title sudtitulo_n">Camiseta Deportiva</h5>
+                        <p class="card-text">$210.000</p>
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                        </button>                       
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="animate__animated animate__backInUp modal fade mt-5 colorblanco" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content fondoCompra">
+              <div class="modal-header">
+                <button type="button" class="btn btn-primary position-relative">
+                  <i class="fa-solid fa-cart-shopping"></i> Comprar  
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    99+
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="mb-3">
+                  <img src="img/icon/icons8-parte-delantera-de-tarjeta-bancaria-48.png" alt="">
+                  <label for="exampleFormControlInput1" class="form-label">Numero de tarjeta</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="*****************">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Nombre</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="*****************">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Telefono</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="*****************">
+                </div>
+                <p class="textoCompra">Si presentas algun problema llamar al 3004491590</p>
+              </div>
+              <div class="modal-footer">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              Pantalones
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <div class="row col-lg-10 col-md-10 col-sm-10 d-flex justify-content-center mx-auto mb-4">
+                <div class="card border border-primary col col-lg-4 col-md-6 col-6 sinBordes" style="width: 18rem;">
+                    <img src="img/tienda/ropa/pantalones/pantalones1.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title sudtitulo_n">Pantalones Deportivos</h5>
+                        <p class="card-text">$80.000</p>
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                        </button>                      
+                    </div>
+                </div>
+                <div class="card border border-primary col col-lg-4 col-md-6 col-12  sinBordes" style="width: 18rem;">
+                    <img src="img/tienda/ropa/pantalones/pantalones2.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title sudtitulo_n">Pantalones Deportivos</h5>
+                        <p class="card-text">$110.000</p>
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                        </button>                      
+                    </div>
+                </div>
+                <div class="card border border-primary col col-lg-4 col-md-6 col-6 sinBordes" style="width: 18rem;">
+                    <img src="img/tienda/ropa/pantalones/pantalones3.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title sudtitulo_n">Pantalones Deportivos</h5>
+                        <p class="card-text">$210.000</p>
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                        </button>                      
+                    </div>
+                </div>
+                <div class="card border border-primary col col-lg-4 col-md-6 col-6 sinBordes" style="width: 18rem;">
+                    <img src="img/tienda/ropa/pantalones/pantalones4.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title sudtitulo_n">Pantalones Deportivos</h5>
+                        <p class="card-text">$230.000</p>
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                        </button>                      
+                    </div>
+                </div>
+                <div class="card border border-primary col col-lg-4 col-md-6 col-6  sinBordes" style="width: 18rem;">
+                    <img src="img/tienda/ropa/pantalones/pantalones5.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title sudtitulo_n">Pantalones Deportivos</h5>
+                        <p class="card-text">$240.000</p>
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                        </button>                    
+                    </div>
+                </div>
+                <div class="card border border-primary col col-lg-4 col-md-6 col-6  sinBordes" style="width: 18rem;">
+                    <img src="img/tienda/ropa/pantalones/pantalones6.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title sudtitulo_n">Pantalones Deportivos</h5>
+                        <p class="card-text">$50.000</p>
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                        </button>                      
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              Zapatos
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+              <div class="row col-lg-10 col-md-10 col-sm-10 d-flex justify-content-center mx-auto mb-4">
+                <div class="card border border-primary col col-lg-4 col-md-6 col-6 sinBordes" style="width: 18rem;">
+                    <img src="img/tienda/ropa/zapatos/zapatos1.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title sudtitulo_n">Zapatos Deportivos</h5>
+                        <p class="card-text">$150.000</p>
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                        </button>                      
+                    </div>
+                </div>
+                <div class="card border border-primary col col-lg-4 col-md-6 col-12  sinBordes" style="width: 18rem;">
+                    <img src="img/tienda/ropa/zapatos/zapatos2.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title sudtitulo_n">Zapatos Deportivos</h5>
+                        <p class="card-text">$300.000</p>
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                        </button>                     
+                    </div>
+                </div>
+                <div class="card border border-primary col col-lg-4 col-md-6 col-6 sinBordes" style="width: 18rem;">
+                    <img src="img/tienda/ropa/zapatos/zapatos3.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title sudtitulo_n">Zapatos Deportivos</h5>
+                        <p class="card-text">$150.000</p>
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                        </button>                      
+                    </div>
+                </div>
+                <div class="card border border-primary col col-lg-4 col-md-6 col-6 sinBordes" style="width: 18rem;">
+                    <img src="img/tienda/ropa/zapatos/zapatos4.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title sudtitulo_n">Zapatos Deportivos</h5>
+                        <p class="card-text">$250.000</p>
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                        </button>                      
+                    </div>
+                </div>
+                <div class="card border border-primary col col-lg-4 col-md-6 col-6  sinBordes" style="width: 18rem;">
+                    <img src="img/tienda/ropa/zapatos/zapatos5.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title sudtitulo_n">Zapatos Deportivos</h5>
+                        <p class="card-text">$200.000</p>
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                        </button>                      
+                    </div>
+                </div>
+                <div class="card border border-primary col col-lg-4 col-md-6 col-6  sinBordes" style="width: 18rem;">
+                    <img src="img/tienda/ropa/zapatos/zapatos6.jpg" data-bs-toggle="popover" data-bs-title="GRAN DESCUENTO" data-bs-content="Si pagas con tarjeta recibiras un descuento del 50%" data-bs-trigger="hover focus" class="card-img-top imagenTienda" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title sudtitulo_n">Zapatos Deportivos</h5>
+                        <p class="card-text">$100.000</p>
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="text Button"><i class="fa-solid fa-cart-shopping"></i> Comprar</span>
+                        </button>                    
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row col-lg-10 col-md-10 col-sm-10 mx-auto mb-4">
+      <div id="list-example" class="list-group col-lg-6 col-md-6 col-sm-6 mx-auto">
+        <a class="list-group-item list-group-item-action" href="#list-item-1">Categorias</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-2">Ropa</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-3">Proteinas</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-4">Pesas</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-5">Acesorias</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-6">Suscripciones</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-7">Aminoacidos</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-8">Creatina</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-9">Barras</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-10">Comida fit</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-11">Rutinas</a>
+      </div>
+      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example col-lg-6 col-md-6 col-sm-6 colorblanco text-center tabindex="0">
+        <h4 id="list-item-1">Pactalones, Camisetas, Zapatos</h4>
+        <h4 id="list-item-2">Limpias, Caloricas, Mixtas</h4>
+        <h4 id="list-item-3">Mancuernas, Discos, Bancas</h4>
+        <h4 id="list-item-4">llamadas, citas, Eventos</h4>
+        <h4 id="list-item-5">Por Años, Meses, Dias</h4>
+        <h4 id="list-item-6">Alta calidad, Calidad Media y baja</h4>
+        <h4 id="list-item-7">Pura, htc, con sabor</h4>
+        <h4 id="list-item-8">Pequeñas, medianas, Grandes</h4>
+        <h4 id="list-item-9">burritos, carnes</h4>
+        <h4 id="list-item-10">sopas, tortillas</h4>
+        <h4 id="list-item-11">ensaladas, frutas</h4>
+        <h4 id="list-item-12">alta intencidad</h4>
+      </div>
+    </div>
+
+
+    
+    <div class="d-flex justify-content-center miFouter miFoutercontenido pt-5 pb-4">
+      <div class="col-lg-6 col-md-5 col-sm-7 ">
+        <h2>Jeffry Nuñez coach</h2>
+        <p>no cambiamos cuerpos cambiamos vidas</p>
+      </div>
+      <div class="col-lg-5 col-md-6 col-sm-4 text-end fs-1">
+        <i class="fa-brands iconos fa-facebook-f rounded-circle border"></i>
+        <i class="fa-brands iconos fa-instagram rounded-circle border"></i>
+        <i class="fa-brands iconos fa-twitter rounded-circle border"></i>
+      </div>
+    </div>
+    <div class="miFouter">
+      <h2 class="subtituloFouter" >Ubicanos en:</h2>
+      <div class="row col-lg-11 col-md-11 col-sm-11 d-flex justify-content-center mx-auto text-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.7411913059154!2d-75.70244388573674!3d4.81444124200255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38874fecb5c80d%3A0xe2ea252ec17f3dd7!2sSENA!5e0!3m2!1sen!2sco!4v1666447996458!5m2!1sen!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p><i class="fa-solid fa-phone-volume"></i> contacto: 3006286476</p>
+        <p><i class="fa-regular fa-envelope"></i> contacto: 3006286476</p>
+        <p><i class="fa-regular fa-copyright"></i> derechos reservados Jeffry nuñez</p>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

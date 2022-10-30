@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jeffry fitness</title>
+    <link rel="stylesheet" href="scss/custom.css">
+    <link rel="stylesheet" href="css/misestilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body onload="hola();" class="slider3">
+    <div class="contenerdor_loader" id="#hola1">
+      <div class="position-absolute top-50 start-50 translate-middle">
+        <div role="status">
+          <img class="ms-4 rotar" src="img/icon/dumbbell (1).png" alt="">
+        </div>
+        <h2 class="colorblanco pt-3">Cargando...</h2>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-light navFijo" aria-label="breadcrumb">
+        <ol class="breadcrumb ms-5 mt-2 ">
+          <li class="breadcrumb-item sinBordes"><a href="tienda.html">Accesorios</a></li>
+          <li class="breadcrumb-item active " aria-current="page">Suscripciones</li>
+        </ol>
+      </nav>
+      <div class=" col-lg-12 col-md-12 col-sm-12">
+        <h2 class="subtitulo">Suscripciones</h2>
+    </div>
+      <div class="col-6 mx-auto fondoForm p-5 redunded mb-4 rounded">
+        <form class="row g-3 colorblanco">
+            <div class="col-md-6">
+              <label for="validationServer01" class="form-label">Nombre</label>
+              <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+              <div class="valid-feedback">
+                Correcto!
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationServer02" class="form-label">Apellidos</label>
+              <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+              <div class="valid-feedback">
+                Correcto!
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationServerUsername" class="form-label">Correo</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                  Dato invalido.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationServer03" class="form-label">Ciudad</label>
+              <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+              <div id="validationServer03Feedback" class="invalid-feedback">
+                Dato invalido.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationServer04" class="form-label"></label>
+              <label for="validationServer05" class="form-label">Tipo suscripcion</label>
+              <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                <option selected disabled value="">Tipos...</option>
+                <option>Premiun</option>
+                <option>Basica</option>
+                <option>semi premiun</option>
+                <option>Diamante</option>
+              </select>
+              <div id="validationServer04Feedback" class="invalid-feedback">
+                Dato invalido.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationServer05" class="form-label">Telefono</label>
+              <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+              <div id="validationServer05Feedback" class="invalid-feedback">
+                Dato invalido.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                <label class="form-check-label" for="invalidCheck3">
+                  Aceptar los términos y condiciones
+                </label>
+                <div id="invalidCheck3Feedback" class="invalid-feedback">
+                  Debe estar de acuerdo antes de enviarla.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+          </form>
+      </div>
+      
+    <div class="d-flex justify-content-center miFouter miFoutercontenido pt-5 pb-4">
+      <div class="col-lg-6 col-md-5 col-sm-7 ">
+        <h2>Jeffry Nuñez coach</h2>
+        <p>no cambiamos cuerpos cambiamos vidas</p>
+      </div>
+      <div class="col-lg-5 col-md-6 col-sm-4 text-end fs-1">
+        <i class="fa-brands iconos fa-facebook-f rounded-circle border"></i>
+        <i class="fa-brands iconos fa-instagram rounded-circle border"></i>
+        <i class="fa-brands iconos fa-twitter rounded-circle border"></i>
+      </div>
+    </div>
+    <div class="miFouter">
+      <h2 class="subtituloFouter" >Ubicanos en:</h2>
+      <div class="row col-lg-11 col-md-11 col-sm-11 d-flex justify-content-center mx-auto text-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.7411913059154!2d-75.70244388573674!3d4.81444124200255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38874fecb5c80d%3A0xe2ea252ec17f3dd7!2sSENA!5e0!3m2!1sen!2sco!4v1666447996458!5m2!1sen!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p><i class="fa-solid fa-phone-volume"></i> contacto: 3006286476</p>
+        <p><i class="fa-regular fa-envelope"></i> contacto: 3006286476</p>
+        <p><i class="fa-regular fa-copyright"></i> derechos reservados Jeffry nuñez</p>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
